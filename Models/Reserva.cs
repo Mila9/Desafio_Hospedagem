@@ -41,6 +41,11 @@ namespace DesafioProjetoHospedagem.Models
         {
             // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
             // *IMPLEMENTE AQUI*
+            int quantidade = 0;
+            if(Hospedes.Any()){
+                quantidade = Hospedes.Count;
+                return quantidade;
+            }
             return 0;
         }
 
